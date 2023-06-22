@@ -24,9 +24,6 @@ import {
 import { makeStyles } from "@mui/styles";
 import { useNavigate } from "react-router-dom";
 
-// function numberWithCommas(x) {
-//   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-// }
 const useStyles = makeStyles(() => ({
   row: {
     backgroundColor: "#16171a",
@@ -109,15 +106,6 @@ const CoinsTable = () => {
     },
   });
 
-  // const SearchFilter = coins.filter((coin) => {
-  //   return (
-  //     coin.name.toLowerCase().includes(search) ||
-  //     coin.symbol.toLowerCase().includes(search)
-  //   );
-  // });
-  // setFData(SearchFilter);
-  // console.log(SearchFilter, "Search");
-
   const handleSearch = (e) => {
     if (!e.target.value) {
       setFilterdCoins(coins);
@@ -136,7 +124,7 @@ const CoinsTable = () => {
     <div>
       <ThemeProvider theme={darkTheme}>
         <Container sx={{ textAlign: "center" }}>
-          <Typography variant="h4" sx={{ m: 18, fontFamily: "Montserrat" }}>
+          <Typography variant="h4" sx={{ m: 2, fontFamily: "Montserrat" }}>
             Cryptocurrency prices by Market Cap
           </Typography>
           <CustomTextField

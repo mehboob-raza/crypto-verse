@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { Crypto } from "../context/CryptoContext";
 import axios from "axios";
 import { SingleCoin } from "../config/api";
-import { makeStyles } from "@mui/styles";
 import {
   Box,
   Container,
@@ -43,6 +42,7 @@ const CoinPage = () => {
                 alignItems: "center",
                 marginTop: "25px",
                 borderRight: { md: "2px solid grey", sm: "none" },
+                overflow: "hidden",
               }}
             >
               <img

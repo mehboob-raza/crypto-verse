@@ -2,7 +2,6 @@ const SelectButton = ({ children, selected, onClick }) => {
   return (
     <button
       onClick={onClick}
-      // className={classes.selectbutton}
       style={{
         border: "1px solid gold",
         borderRadius: 5,
