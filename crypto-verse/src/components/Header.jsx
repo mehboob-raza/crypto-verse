@@ -67,8 +67,14 @@ const Header = () => {
                 marginLeft: 15,
                 color: "#fff",
 
-                ".css-hfutr2-MuiSvgIcon-root-MuiSelect-icon": {
-                  color: theme.palette.primary.main,
+                // Change the border color
+                "&.MuiOutlinedInput-root": {
+                  borderColor: "#fff",
+                },
+
+                // Change the arrow color
+                "& .css-hfutr2-MuiSvgIcon-root-MuiSelect-icon": {
+                  color: "#fff",
                 },
               }}
             >
